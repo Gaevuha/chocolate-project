@@ -1,0 +1,210 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v29-latin-regular.eot');
+  src: url('../fonts/montserrat-v29-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-v29-latin-regular.woff2') format('woff2'),
+       url('../fonts/montserrat-v29-latin-regular.woff') format('woff'),
+       url('../fonts/montserrat-v29-latin-regular.ttf') format('truetype'), 
+       url('../fonts/montserrat-v29-latin-regular.svg#Montserrat') format('svg');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v29-latin-500.eot');
+  src: url('../fonts/montserrat-v29-latin-500.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-v29-latin-500.woff2') format('woff2'),
+       url('../fonts/montserrat-v29-latin-500.woff') format('woff'),
+       url('../fonts/montserrat-v29-latin-500.ttf') format('truetype'), 
+       url('../fonts/montserrat-v29-latin-500.svg#Montserrat') format('svg');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v29-latin-600.eot');
+  src: url('../fonts/montserrat-v29-latin-600.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-v29-latin-600.woff2') format('woff2'),
+       url('../fonts/montserrat-v29-latin-600.woff') format('woff'),
+       url('../fonts/montserrat-v29-latin-600.ttf') format('truetype'), 
+       url('../fonts/montserrat-v29-latin-600.svg#Montserrat') format('svg');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v29-latin-700.eot');
+  src: url('../fonts/montserrat-v29-latin-700.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-v29-latin-700.woff2') format('woff2'),
+       url('../fonts/montserrat-v29-latin-700.woff') format('woff'),
+       url('../fonts/montserrat-v29-latin-700.ttf') format('truetype'), 
+       url('../fonts/montserrat-v29-latin-700.svg#Montserrat') format('svg');
+}
+
+:root {
+  --color-primeri-darck: #111;
+  --color-primeri-normal: #1e1823;
+  --color-primeri-orange: #fd9222;
+  --color-pink: #fcf1e0;
+  --color-light: #fafafa;
+  --color-white: #ffffff;
+}
+ /* Basse */
+ 
+*,
+*::after,
+*::before {
+  box-sizing: border-box; /* контент та падінги додаються всередині бордера*/
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--color-primeri-darck);
+  background-color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+img {
+	display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1168px;
+  padding: 0 16px;
+  margin: auto;
+}
+
+/* Header */
+
+.header.section {
+  padding: 0;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+ }
+.header-navigation {
+  display: flex;
+  align-items: center;
+ }
+.header-logo {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-primeri-darck);
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  gap: 4px;
+ }
+
+ .header-logo-accent {
+  font-style: normal;
+ }
+
+.header-logo-icon {
+  fill: var(--color-pink);
+  stroke: var(--color-primeri-orange);
+  margin-right: 447px;
+}
+
+.header-menu-list {
+   display: flex;
+   align-items: center;
+   gap: 24px;
+   margin-right: 94px;
+}
+.header-menu-item {
+  
+}
+.header-menu-link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--color-primeri-darck);
+  padding: 28px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: var(--color-primeri-orange);
+}
+.header-address {
+}
+.header-address-list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.header-address-item {
+}
+.header-address-link {
+  display: flex;
+  align-items: center;
+}
+.header-address-icon {
+  stroke: var(--color-primeri-darck);
+  fill: var(--color-white);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-address-icon:hover,
+.header-address-icon:focus {
+  stroke: var(--color-primeri-orange);
+}
