@@ -323,8 +323,8 @@ background-color: var(--color-pink);
 }
 .features-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center;
+  justify-content: space-between; */
   gap: 70px;
 }
 .features-item {
