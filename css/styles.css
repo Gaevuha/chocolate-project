@@ -298,3 +298,18 @@ background-color: var(--color-pink);
   fill: var(--color-primeri-orange);
 }
 
+.hero-btn-scroll:hover,
+.hero-btn-scroll:focus {
+  color: var(--color-primeri-orange);
+}
+
+.hero-btn-scroll:hover .wrap-scroll-icon,
+.hero-btn-scroll:focus .wrap-scroll-icon {
+  background-color: var(--color-primeri-orange);
+}
+
+.hero-btn-scroll:hover .hero-scrol-icon,
+.hero-btn-scroll:focus .hero-scrol-icon {
+  fill: var(--color-white);
+}
+
