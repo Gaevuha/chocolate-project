@@ -72,7 +72,7 @@ body {
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--color-primeri-darck);
-  background-color: var(--color-white);
+  background-color: var(--color-light);
 }
 
 h1,
@@ -198,7 +198,7 @@ button {
 }
 .header-address-icon {
   stroke: var(--color-primeri-darck);
-  fill: var(--color-white);
+  fill: var(--color-light);
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -319,10 +319,7 @@ background-color: var(--color-pink);
 .features {
   background-color: var(--color-primeri-normal);
 }
-.container {
-}
-.visually-hidden {
-}
+
 .features-list {
   display: flex;
   align-items: flex-start;
@@ -422,6 +419,7 @@ background-color: var(--color-pink);
 .sensation-item {
   position: relative;
   overflow: hidden;
+  background-color: var(--color-white);
 }
 
 .overlay {
@@ -526,6 +524,9 @@ background-color: var(--color-pink);
   display: flex;
   flex-direction: column;
   padding: 32px;
+
+  border-radius: 15px;
+background-color: var(--color-white);
 }
 
 .made-title-accent {
@@ -563,6 +564,81 @@ background-color: var(--color-pink);
   font-size: 14px;
 }
 
+/* Section Loved */
+
+.loved .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loved-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.loved-title-accent {
+  color: var(--color-primeri-orange);
+}
+.loved-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 49px;
+}
+.loved-item {
+  position: relative;
+  width: calc((100% - 56px) / 3);
+  padding-top: 42px;
+}
+.loveg-image {
+  position: absolute;
+  left: 138px;
+  top: 0;
+  border-radius: 100%;
+}
+
+.wrap-loved-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  padding: 56px 24px 24px 24px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  background-color: var(--color-white);
+}
+
+.loved-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.loved-item-text {
+  font-size: 14px;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.loved-btn {
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid var(--color-primeri-orange);
+  border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 222px;
+  color: var(--color-primeri-darck);
+  background-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loved-btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-primeri-orange);
+}
 
 
 
