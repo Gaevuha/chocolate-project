@@ -468,6 +468,9 @@
                 class="modal-field"
                 name="user-name"
                 id="user-name"
+                pattern="[A-Za-zА-Яа-яҐґЄєІіЇї\s'-]{2,}"
+                title="Name must contain at least 2 letters and may include spaces, apostrophes, or hyphens."
+                required
               />
               <svg class="modal-icons" width="24" height="24">
                 <use href="./images/icons.svg#icon-user"></use>
@@ -483,6 +486,7 @@
                 class="modal-field"
                 name="email"
                 id="user-email"
+                required
               />
               <svg class="modal-icons" width="24" height="24">
                 <use href="./images/icons.svg#icon-mail"></use>
@@ -498,6 +502,9 @@
                 class="modal-field"
                 name="contact-tel"
                 id="user-tel"
+                pattern="\+?[0-9\s-]{10,15}"
+                title="Phone number must be 10-15 digits and may include spaces, hyphens, or a leading '+'."
+                required
               />
               <svg class="modal-icons" width="24" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -519,6 +526,7 @@
               name="user-privacy"
               class="visually-hidden checked"
               value="true"
+              required
             />
             <label for="user-privacy" class="checkbox-privacy">
               <span class="checkbox icons">
