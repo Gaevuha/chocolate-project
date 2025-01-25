@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Chocolate</title>
+    <script src="./js/mogal.js" defer></script>
   </head>
   <body>
     <header class="header section">
@@ -390,7 +391,9 @@
               </div>
             </li>
           </ul>
-          <button class="loved-btn" type="button">Leave a review</button>
+          <button class="loved-btn" type="button" data-modal-open>
+            Leave a review
+          </button>
         </div>
       </section>
     </main>
@@ -445,5 +448,91 @@
         </div>
       </div>
     </footer>
+    <div class="hidden modal-overlay" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-icons-close" width="28" height="28">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <p class="name-form-modal">
+          Leave a review about
+          <span class="name-modal-accent">our chocolate</span>
+        </p>
+        <form class="order-form" id="orderForm">
+          <div class="input-group">
+            <label for="user-name" class="name-label">Name</label>
+            <div class="for-input-icon">
+              <input
+                type="text"
+                class="modal-field"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="modal-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="user-email" class="name-label">Email</label>
+            <div class="for-input-icon">
+              <input
+                type="email"
+                class="modal-field"
+                name="email"
+                id="user-email"
+              />
+              <svg class="modal-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="user-tel" class="name-label">Phone number</label>
+            <div class="for-input-icon">
+              <input
+                type="tel"
+                class="modal-field"
+                name="contact-tel"
+                id="user-tel"
+              />
+              <svg class="modal-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="field-comment">
+            <label for="user-comment" class="name-label">Comment</label>
+            <textarea
+              id="user-comment"
+              class="modal-field textarea-field"
+              name="user-comment"
+            ></textarea>
+          </div>
+          <div class="checkbox-group">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              class="visually-hidden checked"
+              value="true"
+            />
+            <label for="user-privacy" class="checkbox-privacy">
+              <span class="checkbox icons">
+                <svg class="icons-marker" width="10" height="10">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="link-policy">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
