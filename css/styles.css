@@ -319,7 +319,6 @@ background-color: var(--color-pink);
 /* Features */
 .features {
   background-color: var(--color-primeri-normal);
-  margin-bottom: 50px;
 }
 
 .features-list {
@@ -371,6 +370,10 @@ background-color: var(--color-pink);
 }
 
 /* Sensation */
+
+.sensation {
+  padding-top: 100px;
+}
 
 .sensation-title {
   max-width: 411px;
@@ -570,7 +573,7 @@ background-color: var(--color-white);
 /* Section Loved */
 
 .loved {
-  margin-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .loved .container {
