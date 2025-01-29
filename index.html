@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Chocolate</title>
+    <script src="./js/menu.js" defer></script>
     <script src="./js/mogal.js" defer></script>
   </head>
   <body>
@@ -52,11 +53,58 @@
               </li>
             </ul>
           </address>
+
+          <button class="burger-btn" type="button" data-menu-open>
+            <svg class="burger-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-icons-close" width="14" height="14">
+              <use href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a class="mobile-link accent" href="/index.html">Home</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-link" href="#made">How it’s made?</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-link" href="#loved">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-address">
+            <ul class="mobile-address-list">
+              <li class="mobile-address-item">
+                <a class="mobile-address-link" href="">
+                  <svg class="mobile-address-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-address-item">
+                <a class="mobile-address-link" href="">
+                  <svg class="mobile-address-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero section">
+      <!-- <section class="hero section">
         <div class="container">
           <h1 class="hero-title">
             Treat yourself or a loved one to<br />
@@ -76,8 +124,8 @@
             </a>
           </div>
         </div>
-      </section>
-      <section id="features" class="features section">
+      </section> -->
+      <!-- <section id="features" class="features section">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="features-list">
@@ -126,8 +174,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="sensation section">
+      </section> -->
+      <!-- <section class="sensation section">
         <div class="container">
           <h2 class="sensation-title">
             It all adds up to one exceptional
@@ -246,8 +294,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section id="made" class="made section">
+      </section> -->
+      <!-- <section id="made" class="made section">
         <div class="container">
           <h2 class="made-title">
             How it's <span class="made-title-accent">made?</span>
@@ -330,8 +378,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="loved" class="loved section">
+      </section> -->
+      <!-- <section id="loved" class="loved section">
         <div class="container">
           <h2 class="loved-title">
             <span class="loved-title-accent">Chocolate</span> is loved
@@ -395,9 +443,9 @@
             Leave a review
           </button>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer section">
+    <!-- <footer class="footer section">
       <div class="container">
         <div class="wrap-title-address">
           <p class="footer-title">
@@ -447,8 +495,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="hidden modal-overlay" data-modal>
+    </footer> -->
+    <!-- <div class="hidden modal-overlay" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-icons-close" width="28" height="28">
@@ -541,6 +589,6 @@
           <button type="submit" class="modal-submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
