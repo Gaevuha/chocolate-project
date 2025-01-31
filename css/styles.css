@@ -403,7 +403,7 @@ address {
 }
 
 .hero-batton {
-  max-width: 295px;
+  /* max-width: 295px; */
   display: block;
   align-items: center;
 }
