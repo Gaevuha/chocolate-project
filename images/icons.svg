@@ -53,5 +53,8 @@
 <symbol id="icon-close-menu" viewBox="0 0 32 32">
     <path d="M29.333 2.667l-26.667 26.667M2.666 2.667l26.667 26.667"></path>
 </symbol>
+<symbol id="icon-video-btn" viewBox="0 0 30 32">
+    <path d="M0 32v-32l29.867 16-29.867 16z"></path>
+</symbol>
 </defs>
 </svg>

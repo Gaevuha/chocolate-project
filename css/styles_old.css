@@ -18,67 +18,16 @@
 
 
 
-/* Made */
 
-.made-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 50px;
-}
 
-.wrap-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
 
-.wrap-title-list {
-  display: flex;
-  flex-direction: column;
-  padding: 32px;
 
-  border-radius: 15px;
-background-color: var(--color-white);
-}
 
-.made-title-accent {
-  color: var(--color-primeri-orange);
-}
-.made-item-title {
-  max-width: 350px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.33;
-  margin-bottom: 24px;
-}
-.made-item {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-}
 
-.made-item:not(:last-child) {
-  margin-bottom: 24px;
-}
 
-.wrap-icon-marker {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.made-icon-marker {
-  flex-shrink: 0;
-  fill: var(--color-marker-darck);
-  stroke: var(--color-marker-light);
-}
-.made-item-text {
-  font-size: 14px;
-}
+
+
 
 /* Section Loved */
 

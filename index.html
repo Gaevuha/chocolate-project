@@ -347,26 +347,54 @@
           </ul>
         </div>
       </section>
-      <!-- <section id="made" class="made section">
+      <section id="made" class="made section">
         <div class="container">
           <h2 class="made-title">
             How it's <span class="made-title-accent">made?</span>
           </h2>
           <div class="wrap-content">
-            <img
-              srcset="
-                ./images/man-chocolate.jpg    1x,
-                ./images/man-chocolate@2x.png 2x
-              "
-              src="./images/man-chocolate.png"
-              alt="man pours chocolate"
-              width="600"
-              height="400"
-            />
+            <div class="wrap-img-btn">
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-man-chocolate.jpg    1x,
+                    ./images/mobile-man-chocolate@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  width="335"
+                  height="500"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-man-chocolate.jpg    1x,
+                    ./images/tablet-man-chocolate@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                  width="614"
+                  height="400"
+                />
+                <img
+                  srcset="
+                    ./images/man-chocolate.jpg    1x,
+                    ./images/man-chocolate@2x.jpg 2x
+                  "
+                  src="./images/man-chocolate.jpg"
+                  alt="man pours chocolate"
+                  width="600"
+                  height="400"
+                  class="made-img"
+                />
+              </picture>
+              <button class="made-video-btn" type="button">
+                <svg class="icon-play" width="14" height="15">
+                  <use href="./images/icons.svg#icon-video-btn"></use>
+                </svg>
+              </button>
+            </div>
             <div class="wrap-title-list">
               <h3 class="made-item-title">
-                Try our chocolates today and<br />
-                discover the perfect balance of flavor
+                Try our chocolates today and discover the perfect balance of
+                flavor
               </h3>
               <ul class="made-list">
                 <li class="made-item">
@@ -398,10 +426,11 @@
                     </svg>
                   </div>
                   <p class="made-item-text">
-                    "Mix" the milk mixture and already liquid butter. Mix<br />
-                    thoroughly with a silicone spatula so that the mass
-                    becomes<br />
-                    uniform and silky.
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    <span class="hyphenation"
+                      >thoroughly with a silicone spatula so that the mass
+                      becomes</span
+                    ><span class="hyphenation"> uniform and silky.</span>
                   </p>
                 </li>
                 <li class="made-item">
@@ -421,16 +450,17 @@
                     </svg>
                   </div>
                   <p class="made-item-text">
-                    Pour the chocolate into special containers (can be
-                    replaced<br />
-                    with ice molds). Allow to cool and harden.
+                    Pour the chocolate into special containers (can be replaced
+                    <span class="hyphenation"
+                      >with ice molds). Allow to cool and harden.</span
+                    >
                   </p>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- <section id="loved" class="loved section">
         <div class="container">
           <h2 class="loved-title">
