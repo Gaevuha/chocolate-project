@@ -377,7 +377,7 @@ address {
   background-position: center;
   background-size: cover;
   padding: 345px 40px 20px; /* 381px 72px 40px;*/
-  margin-bottom: 72px;
+  margin-bottom: 60px;
   border-radius: 30px;
  }
 
@@ -465,6 +465,7 @@ address {
   max-width: 768px;
   background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/tablet-chocolate-bg.jpg);
   padding: 671px 72px 40px; /* 381px 72px 40px;*/  
+  margin-bottom: 40px;
  }
 
 @media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px) {
@@ -516,7 +517,8 @@ address {
 .hero {
   max-width: 1200px;
   background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-bg.jpg);
-  padding-top: 381px;  
+  padding-top: 381px;
+  margin-bottom: 72px;
  }
 
  @media (min-resolution: 192dpi) and (min-width: 1200px) {
@@ -526,7 +528,7 @@ address {
   }
 }
 
- .hero-btn:hover,
+.hero-btn:hover,
 .hero-btn:focus {
 color: var(--color-primeri-orange);
 background-color: var(--color-pink);
@@ -565,5 +567,90 @@ background-color: var(--color-pink);
 
 /* Features */
 .features {
+  padding: 20px 0 36px;
   background-color: var(--color-primeri-normal);
 }
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+  /* align-items: flex-start;*/
+  gap: 38px; /*70*/
+}
+
+.wrap-features-icon {
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.features-item-icon {
+  fill: var(--color-primeri-orange);
+}
+
+
+.features-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-white);
+  margin-bottom: 18px;
+}
+
+.features-item-text {
+  max-width: 308px;
+  font-size: 14px;
+  color: var(--color-white);
+}
+
+.hyphenation {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+
+.features {
+  padding: 50px 0;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.features-item {
+  width: calc((100% - 32px) / 2);
+}
+}
+
+@media screen and (min-width: 1200px) {
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.features-item {
+  position: relative;
+  width: calc((100% - 140px) / 3);
+}
+
+.features-item.dicoration::after {
+  position: absolute;
+  top: 120px;
+  left: 270px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 124px;
+  height: 0px;
+  transform: rotate(-90deg);
+  content: '';
+}
+} 
+  
