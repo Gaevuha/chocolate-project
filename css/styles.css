@@ -434,7 +434,7 @@ address {
 }
 
 .hero-btn-scroll {
-  max-width: 106px;
+  max-width: 107px;
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -494,6 +494,7 @@ address {
 }
 
 .hero-btn-scroll {
+  max-width: 130px;
   font-size: 14px;
   line-height: 1.29;
   margin-left: auto;
@@ -559,4 +560,10 @@ background-color: var(--color-pink);
   fill: var(--color-white);
 }
   
+}
+
+
+/* Features */
+.features {
+  background-color: var(--color-primeri-normal);
 }

@@ -1,10 +1,6 @@
 
 
 
-/* Features */
-.features {
-  background-color: var(--color-primeri-normal);
-}
 
 .features-list {
   display: flex;
