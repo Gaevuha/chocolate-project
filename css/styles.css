@@ -977,5 +977,143 @@ background-color: var(--color-pink);
 .made-item:not(:last-child) {
   margin-bottom: 24px;
 }
+}
+
+/* Section Loved */
+
+
+.loved-item {
+  position: relative;
+  /* width: calc((100% - 56px) / 3); */
+  padding-top: 42px;
+}
+.loveg-image {
+  position: absolute;
+  left: 138px;
+  top: 0;
+  border-radius: 100%;
+}
+
+.wrap-loved-content {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  padding: 56px 18px 42px 18px;  /*56px 24px 24px 24px;*/
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  background-color: var(--color-white);
+}
+
+.loved-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.loved-item-text {
+  font-size: 14px;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+/*Стилі для пагінації (крапки внизу)*/
+
+.slick-dots li button::before {
+    display: none; /* Ховає стандартні dots */
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.slick-dots li {
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
+
+/* Звичайний dot */
+.slick-dots li button {
+    font-size: 0;
+    width: 13px;
+    height: 13px;
+    background: url('../images/dots.png') no-repeat center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Активний dot */
+.slick-dots li.slick-active button {
+    width: 28px;
+    height: 13px;
+    background: url('../images/dots-active.png') no-repeat center;
+    background-size: contain;
+}
+
+
+.slick-dotted.slick-slider {
+    margin-bottom: 62px;
+}
+
+.loved {
+   padding: 60px 0;  /* padding-bottom: 100px; */
+}
+
+.loved .container {
+  display: block;
+}
+
+.loved-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;  /*24*/
+  line-height: 1.2; /*1.17*/
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;  /*50*/
+}
+
+.loved-title-accent {
+  color: var(--color-primeri-orange);
+}
+
+.loved-btn {
+  display: block;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid var(--color-primeri-orange);
+  border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 222px;
+  color: var(--color-primeri-darck);
+  background-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loved-btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-primeri-orange);
+}
+
+@media screen and (min-width: 768px) {
+  
+.loved-item {
+    margin-right: 16px;
+}
+
+/* Видаляємо відступ у останнього елемента в ряді */
+.slick-slide:last-child .loved-item {
+    margin-right: 0;
+}
 
 }
