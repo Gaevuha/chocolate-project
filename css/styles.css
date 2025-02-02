@@ -984,12 +984,11 @@ background-color: var(--color-pink);
 
 .loved-item {
   position: relative;
-  /* width: calc((100% - 56px) / 3); */
   padding-top: 42px;
 }
 .loveg-image {
   position: absolute;
-  left: 125px;  /*138*/
+  left: 125px;
   top: 0;
   border-radius: 100%;
 }
@@ -998,7 +997,7 @@ background-color: var(--color-pink);
   display: flex;
   flex-direction: column;
   height: 200px;
-  padding: 56px 18px 42px 18px;  /*56px 24px 24px 24px;*/
+  padding: 56px 18px 42px 18px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   background-color: var(--color-white);
@@ -1065,7 +1064,7 @@ background-color: var(--color-pink);
 }
 
 .loved {
-   padding: 60px 0;  /* padding-bottom: 100px; */
+   padding: 60px 0;
 }
 
 .loved .container {
@@ -1075,11 +1074,11 @@ background-color: var(--color-pink);
 .loved-title {
   text-align: center;
   font-weight: 600;
-  font-size: 20px;  /*24*/
-  line-height: 1.2; /*1.17*/
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  margin-bottom: 32px;  /*50*/
+  margin-bottom: 32px;
 }
 
 .loved-title-accent {
@@ -1116,4 +1115,41 @@ background-color: var(--color-pink);
     margin-right: 0;
 }
 
+.loved-title {
+  font-size: 24px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+}
+
+
+.slick-dotted.slick-slider {
+    margin-bottom: 95px;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+ .loved {
+    padding: 50px 0;
+}
+
+.your-class {
+    display: flex;    
+    gap: 28px;
+    margin-bottom: 50px;
+}
+.loved-item {
+  margin-right: 0;  
+  width: calc((100% - 56px) / 3);
+}
+
+.loveg-image {
+  left: 138px;
+}
+
+
+.wrap-loved-content {
+  padding: 56px 24px 24px 24px;  
+}
 }
