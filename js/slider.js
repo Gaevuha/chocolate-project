@@ -5,7 +5,7 @@ $(document).ready(function () {
         speed: 500,
         slidesToShow: 1, // За замовчуванням 1 слайд
         slidesToScroll: 1, // Перегортається по 1 слайду
-        autoplay: false,          // Автоматичне прокручування слайдів
+        autoplay: true,          // Автоматичне прокручування слайдів
         autoplaySpeed: 3000,     // Час (в мілісекундах) між авто-прокруткою
         appendDots: $('.your-class'), // Додає dots безпосередньо до слайдера
         responsive: [
