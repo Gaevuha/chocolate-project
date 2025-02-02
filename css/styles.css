@@ -989,7 +989,7 @@ background-color: var(--color-pink);
 }
 .loveg-image {
   position: absolute;
-  left: 138px;
+  left: 127px;  /*138*/
   top: 0;
   border-radius: 100%;
 }
