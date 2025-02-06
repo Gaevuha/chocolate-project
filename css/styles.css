@@ -128,9 +128,6 @@ address {
   overflow: hidden;
 }
 
-.hyphenation {
-  display: block;
-}
 
 /*common*/
 
@@ -387,12 +384,14 @@ address {
   border-radius: 30px;
  }
 
- @media (min-resolution: 192dpi) and (max-width: 767px) {
+ @media (min-resolution: 192dpi) and (max-width: 767px), 
+       (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%),
       url(../images/mobile-chocolate-bg@2x.jpg);
   }
 }
+
 
  .hero .container {
   padding: 0;
@@ -407,6 +406,11 @@ address {
   color: var(--color-white);
   margin-bottom: 32px;
 }
+
+.hyphenation {
+  display: inline;
+}
+
 
 .hero-batton {
   display: block;
@@ -473,9 +477,9 @@ address {
   margin-bottom: 40px;
  }
 
-@media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px) {
-
-.hero {
+@media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px), 
+       (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%),
       url(../images/tablet-chocolate-bg@2x.jpg);
   }
@@ -486,6 +490,11 @@ address {
   font-size: 28px;
   line-height: 1.21;
 }
+
+.hero-title .hyphenation {
+  display: block;
+}
+
 
 .hero-batton {
   max-width: 100%;
@@ -523,8 +532,8 @@ address {
   margin-bottom: 72px;
  }
 
- @media (min-resolution: 192dpi) and (min-width: 1200px) {
-.hero-section {
+ @media (min-resolution: 192dpi) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) {
+.hero {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%),
       url(../images/chocolate-bg@2x.jpg);
   }
@@ -571,6 +580,11 @@ background-color: var(--color-pink);
 .features {
   padding: 20px 0 36px;
   background-color: var(--color-primeri-normal);
+}
+
+
+.features .hyphenation {
+  display: block;
 }
 
 .features-list {
@@ -870,6 +884,10 @@ background-color: var(--color-pink);
   margin-bottom: 32px;
 }
 
+.made .hyphenation {
+  display: inline;
+}
+
 .made-title-accent {
   color: var(--color-primeri-orange);
 }
@@ -970,6 +988,10 @@ background-color: var(--color-pink);
 
 .made {
   padding: 50px 0;
+}
+
+.made .hyphenation {
+  display: block;
 }
 .wrap-content {
   flex-direction: row;
