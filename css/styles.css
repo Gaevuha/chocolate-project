@@ -374,7 +374,7 @@ address {
 
 .hero {
   max-width: 375px;
-  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/mobile-chocolate-bg.avif);
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/mobile-chocolate-bg.webp);
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -388,7 +388,7 @@ address {
        (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%),
-      url(../images/mobile-chocolate-bg@2x.avif);
+      url(../images/mobile-chocolate-bg@2x.webp);
   }
 }
 
@@ -472,7 +472,7 @@ address {
   
 .hero {
   max-width: 768px;
-  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/tablet-chocolate-bg.avif);
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/tablet-chocolate-bg.webp);
   padding: 671px 72px 40px; /* 381px 72px 40px;*/  
   margin-bottom: 40px;
  }
@@ -481,7 +481,7 @@ address {
        (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%),
-      url(../images/tablet-chocolate-bg@2x.avif);
+      url(../images/tablet-chocolate-bg@2x.webp);
   }
 }
 
@@ -527,7 +527,7 @@ address {
 @media screen and (min-width: 1200px) {
 .hero {
   max-width: 1200px;
-  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-bg.avif);
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-bg.webp);
   padding-top: 381px;
   margin-bottom: 72px;
  }
@@ -535,7 +535,7 @@ address {
  @media (min-resolution: 192dpi) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) {
 .hero {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%),
-      url(../images/chocolate-bg@2x.avif);
+      url(../images/chocolate-bg@2x.webp);
   }
 }
 
